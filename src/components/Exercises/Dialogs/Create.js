@@ -36,7 +36,7 @@ const styles = theme => ({
 
 class Create extends React.Component {
     state = {
-      open: true,
+      open: false,
       exercise: {
           title:'',
           description: '',
