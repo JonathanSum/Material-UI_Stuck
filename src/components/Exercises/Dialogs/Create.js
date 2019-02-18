@@ -32,13 +32,7 @@ const styles = theme => ({
         width: 500,
       },
   });
-function PaperComponent(props) {
-return (
-    <Draggable>
-    <Paper {...props} />
-    </Draggable>
-);
-}
+
 
 class Create extends React.Component {
     state = {
@@ -88,7 +82,7 @@ class Create extends React.Component {
             <Dialog
                 open={open}
                 onClose={this.handleToggle}
-                PaperComponent={PaperComponent}
+ 
             >
                 <DialogTitle id="draggable-dialog-title">
                     Create a New Exercise
@@ -142,8 +136,8 @@ class Create extends React.Component {
                     <Button color="primary"
                      variant="contained"
                      onClick={this.handleSubmit}
-                     >
-                        Create
+                    >
+                    Create
                     </Button>
                 </DialogActions>
             </Dialog>
